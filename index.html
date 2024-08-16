@@ -19,32 +19,32 @@
       }
     </style>
 </head>
-<body class="bg-[#0f0f0f] sm:min-w-[300px] cursor-none">
+<body class="bg-[#0f0f0f] sm:min-w-fit cursor-none">
   <div class="cursor-dot h-2 w-2 bg-[#FFA500] rounded-xl fixed t-0 l-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none" data-cursor-dot>
   </div>
   <div class="cursor-outline h-6 w-6 border-2 border-[#FFA500] rounded-xl fixed t-0 l-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none" data-cursor-outline>
   </div>
     <header class="sticky top-0 z-[9999]">
         <nav class="bg-[#000]">
-            <div class="container mx-auto px-5 py-2  lg:flex items-center justify-center" >
+            <div class="w-full mx-auto px-5 py-2  lg:flex items-center justify-center" >
                 <div class="flex justify-between w-full">
                     <a href="#Home">
-                        <img src="./Assets/Profile-Images/Logo.png" class="w-[75px] lg:w-[100px]" width="100%" alt="Logo"
+                        <img src="./Assets/Profile-Images/Logo.png" class="w-[75px] lg:w-[100px] ml-[100px] sm:ml[50px]" width="100%" alt="Logo"
                       /></a>
-  
                       <button onclick="toggleMenu()" class="lg:hidden">
                         <img src="./Assets/Icons/menu.png" class="w-[40px]" alt="">
                       </button>
                 </div>
   
-                <div id="menu" class=" hidden lg:block mt-5 lg:mt-0">
-                    <ul class="text-white flex lg:flex-row flex-col gap-[32px]">
+                <div id="menu" class=" hidden lg:block mt-5 lg:mt-0 ">
+                    <ul class="text-white flex lg:flex-row flex-col gap-[32px] mr-[80px] sm:mr[50px]">
                         <li><a href="#Home" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Home</a></li>
                         <li><a href="#Skills" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Skills</a></li>
                         <li class="relative group"><a href="#Projects" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Projects</a>
                             <ul class="lg:absolute lg:hidden group-hover:block left-0 ml-4 lg:top-[30px] lg:py-4 lg:px-2 bg-[#000] text-white lg:w-[200px]">
                                 <li class="py-2 px-2 bg-[#000] hover:text-black hover:bg-[#FFA500]"><a href="#Developed-projects">Developed Projects</a></li>
                                 <li class="py-2 px-2 bg-[#000] hover:text-black hover:bg-[#FFA500]"><a href="#uxui-projects">UX/UI Projects</a></li>
+                                <li class="py-2 px-2 bg-[#000] hover:text-black hover:bg-[#FFA500]"><a href="#freelance-projects">Freelance Projects</a></li>
                             </ul>
                         </li>
                         <li><a href="#About" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">About</a></li>
@@ -57,35 +57,30 @@
 
     <main>
         <!-- Home Section -->
-        <div id="Home" class="h-screen bg-[#0f0f0f] flex flex-col-reverse lg:flex-row-reverse items-center justify-evenly">
+        <div id="Home" class="min-h-[600px] bg-[#0f0f0f] flex flex-col-reverse lg:flex-row-reverse items-center justify-evenly">
             <section class="text-white flex flex-col items-center justify-center gap-4">
                 <h2 class="text-[20px] lg:text-[40px] italic" >Hello! I’m</h2>
                 <h1 class="text-[36px] lg:text-[72px] font-bold">MANOJ</h1>
                 <h2 class="text-[18px] lg:text-[36px] font-bold">Front-End Developer</h2>
 
-                <p class="text-[12px] lg:text-[16px] italic text-center px-4">"Creating pixel-perfect experiences while battling the occasional rogue semicolon!"</p>
-
+                <p class="text-[12px] lg:text-[16px] italic text-center px-4">"Creating pixel-perfect experiences while battling the occasional rogue semicolon!"
+                </p>
                 <section id="Resume" class="text-black font-bold bg-[#FFA500] px-5 lg:px-10 py-2 lg:py-4 rounded-full border-2 border-black hover:shadow-lg">
                     <a href="./Assets/ManojRT-FrontendDeveloper.pdf" download
                       >Download CV</a
                     >
                   </section>
             </section>
-
             <section>
-                <img src="./Assets/Profile-Images/Profile pic.png" alt="Profile-pic" class="w-[300px] scale-[1.5] lg:scale-[1.2] lg:w-[500px]">
+                <img src="./Assets/Profile-Images/Profile pic.png" alt="Profile-pic" class="w-[300px] lg:scale-[1.2] lg:w-[500px]">
             </section>
         </div>
-
         <!-- Skills -->
-
         <div id="Skills" class="relative bg-[url(./Assets/Profile-Images/Town.png)] bg-no-repeat lg:bg-cover sm:h-[300px] lg:h-screen z-[99] text-center flex items-center justify-center flex-col py-[24px]">
             <section id="heading">
-              <!-- <img src="../Assets/Comic-png/MySkills.png" width="100%" alt="" class="w-[150px] lg:w-[200px]" /> -->
               <h2 class="text-white pb-16 text-[32px]">My Skills</h2>
             </section>
-    
-            <section id="skill-icons" class="flex flex-wrap w-[375px] lg:w-[800px] gap-[20px] lg:gap-[48px] justify-evenly lg:justify-around text-white text-[14px] lg:text-[20px] px-2" >
+            <section id="skill-icons" class="flex flex-wrap sm:min-[300px] lg:w-[800px] gap-[20px] lg:gap-[48px] justify-evenly lg:justify-around text-white text-[14px] lg:text-[20px] px-2" >
               <section class="flex items-center justify-center flex-col">
                 <img src="./Assets/Icons/html.png" alt="" class="w-[75px] lg:w-[100px]" />
                 <h2>HTML5</h2>
@@ -128,9 +123,7 @@
               </section>
             </section>
         </div>
-
         <!-- Projects -->
-
         <div id="Projects" class="min-h-screen w-full  flex  flex-col justify-between bg-white">
             <section class="flex items-center justify-center">
                 <h2 class="text-black py-8 lg:py-16 text-[32px] text-center">Projects</h2>
@@ -312,6 +305,50 @@
                     </li>
                 </ul>
             </div>
+            <div id="freelance-projects" class="min-h-[400px]">
+              <h1 class="text-[20px] lg:text-[32px] pb-4 px-8 lg:px-16">
+                  Freelance Works
+              </h1>
+              <ul class="flex flex-col ">
+                  <li class="relative  h-[200px] lg:h-[120px] 
+                  border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                  ">
+                      <section class=" lg:px-16 flex flex-col gap-4">
+                          <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200 w-[150px] lg:w-full">D-Mak Studio | 3d Design Company</h2>
+
+                          <section class="px-4 lg:px-16 lg:hidden block">
+                              <a href="https://d-makstudio.vercel.app/" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                          </section>
+                      </section>
+                      <section class="lg:absolute left-[500px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                          <a href="https://d-makstudio.vercel.app/" target="_blank"> <img src="./Assets/Project-images/Dmakpng.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Netflix Clone Website"></a>
+                      </section>
+                      <section class="px-4 lg:px-16 hidden lg:block">
+                          <a href="https://d-makstudio.vercel.app/" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                      </section>
+                  </li>
+                  <li class="relative  h-[200px] lg:h-[120px] 
+                  border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                  ">
+                      <section class=" lg:px-16 flex flex-col gap-4">
+                          <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200 w-[150px] lg:w-full">Brand Builders | Digital Marketing Company</h2>
+                          <section class="px-4 lg:px-16 lg:hidden block">
+                              <a href="https://brand-builders.vercel.app/"
+                              target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                          </section>
+                      </section>
+                      <section class="lg:absolute lg:left-[600px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                         <a href="https://brand-builders.vercel.app/"
+                         target="_blank">
+                         <img src="./Assets/Project-images/BrandBuilders.png" class="w-[150px] lg:w-[250px] rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Zen Architects"></a> 
+                      </section>
+                      <section class="px-4 lg:px-16 hidden lg:block">
+                          <a href="https://brand-builders.vercel.app/"
+                          target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                      </section>
+                  </li>
+                </ul>
+          </div>
         </div>
 
         <!-- About -->
@@ -346,16 +383,21 @@
                 <br />
               </section>
             </section>
+            <section id="Resume" class="text-black font-bold bg-[#FFA500] px-5 lg:px-10 py-2 lg:py-4 rounded-full border-2 border-black hover:shadow-lg ">
+              <a href="./Assets/ManojRT-FrontendDeveloper.pdf" download
+                >Download CV</a
+              >
+            </section>
         </div>
     </main>
-    <footer id="Contact" class=" lg:h-[300px] bg-[#373737] text-white w-full flex flex-wrap flex-col lg:flex-row  justify-around  lg:items-center lg:gap-24px gap-[24px] py-[50px]">
+    <footer id="Contact" class="sm:mt-4 lg:h-[300px] bg-[#373737] text-white w-full flex flex-wrap flex-col lg:flex-row  justify-around items-center lg:gap-24px gap-[24px] py-[50px]">
         <section class="flex items-center justify-center">
           <a href="./index.html"
             ><img src="./Assets/Profile-Images/Logo.png" width="100px" alt=""
           /></a>
         </section>
         <section class="footer-items">
-          <ul class="flex lg:flex-col items-center justify-center gap-[24px] flex-row">
+          <ul class="flex lg:flex-col items-center lg:items-start justify-center gap-[24px] flex-row">
             <li><a href="#Home" class="hover:text-[#FFA500]">Home</a></li>
             <li><a href="#Skills" class="hover:text-[#FFA500]">Skills</a></li>
             <li><a href="#Projects" class="hover:text-[#FFA500]">Projects</a></li>
@@ -364,9 +406,8 @@
           </ul>
         </section>
         <section class="footer-items">
-          <ul class="flex flex-col items-start justify-center gap-[24px] px-[24px]">
-            <span style="font-size: x-large; font-weight: bold;color: #FFA500;"
-              >UX-UI Design Projects</span
+          <ul class="flex flex-col items-center lg:items-start justify-center gap-[24px] px-[24px]">
+            <span style="font-size: x-large; font-weight: bold;color: #FFA500;">UX-UI Design Projects</span
             >
             <li>
               <a
@@ -404,7 +445,7 @@
         </section>
   
         <section class="footer-items">
-          <ul class="flex flex-col items-start justify-center gap-[24px] w-full px-[24px]">
+          <ul class="flex flex-col items-center lg:items-start justify-center gap-[24px] w-full px-[24px]">
             <span style="font-size: x-large; font-weight: bold; color: #FFA500;"
               >Developed Projects</span
             >
@@ -443,7 +484,7 @@
             </li>
           </ul>
         </section>
-        <section id="social-media" class="flex flex-col gap-[24px] px-[24px]">
+        <section id="social-media" class="flex flex-col items-center lg:items-start gap-[24px] px-[24px]">
           <span style="font-size: x-large; font-weight: bold;color: #FFA500;"
               >Contact Details</span
             >
@@ -459,8 +500,8 @@
           >
         </section>
       </footer>
-      <div id="copyrights" class="bg-[#232323] text-white h-[50px] flex items-center justify-center text-center text-sm lg:text-lg">
-        <p>Copyright © 2024, Manoj RT. All rights reserved.</p>
+      <div id="copyrights" class="bg-[#232323] text-white h-[50px] flex items-center justify-center text-center text-sm lg:text-lg italic">
+        <p>Designed and Developed by Manoj RT</p>
       </div>
     <script src="./nav.js"></script>
     <script src="./main.js"></script>
