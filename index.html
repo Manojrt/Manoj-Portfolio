@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manoj RT | Front-end Developer | UX & UI Designer</title>
+    <!-- <link rel="stylesheet" href="./main.css" /> -->
+
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="shortcut icon"
+      href="./Assets/Profile-Images/Rounded.png"
+      type="image/x-icon"
+    />
+    <style>
+      body{
+        cursor: none;
+      }
+    </style>
+</head>
+<body class="bg-[#0f0f0f] sm:min-w-[300px] cursor-none">
+  <div class="cursor-dot h-2 w-2 bg-[#FFA500] rounded-xl fixed t-0 l-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none" data-cursor-dot>
+  </div>
+  <div class="cursor-outline h-6 w-6 border-2 border-[#FFA500] rounded-xl fixed t-0 l-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none" data-cursor-outline>
+  </div>
+    <header class="sticky top-0 z-[9999]">
+        <nav class="bg-[#000]">
+            <div class="container mx-auto px-5 py-2  lg:flex items-center justify-center" >
+                <div class="flex justify-between w-full">
+                    <a href="#Home">
+                        <img src="./Assets/Profile-Images/Logo.png" class="w-[75px] lg:w-[100px]" width="100%" alt="Logo"
+                      /></a>
+  
+                      <button onclick="toggleMenu()" class="lg:hidden">
+                        <img src="./Assets/Icons/menu.png" class="w-[40px]" alt="">
+                      </button>
+                </div>
+  
+                <div id="menu" class=" hidden lg:block mt-5 lg:mt-0">
+                    <ul class="text-white flex lg:flex-row flex-col gap-[32px]">
+                        <li><a href="#Home" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Home</a></li>
+                        <li><a href="#Skills" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Skills</a></li>
+                        <li class="relative group"><a href="#Projects" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Projects</a>
+                            <ul class="lg:absolute lg:hidden group-hover:block left-0 ml-4 lg:top-[30px] lg:py-4 lg:px-2 bg-[#000] text-white lg:w-[200px]">
+                                <li class="py-2 px-2 bg-[#000] hover:text-black hover:bg-[#FFA500]"><a href="#Developed-projects">Developed Projects</a></li>
+                                <li class="py-2 px-2 bg-[#000] hover:text-black hover:bg-[#FFA500]"><a href="#uxui-projects">UX/UI Projects</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#About" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">About</a></li>
+                        <li><a href="#Contact" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <div id="Home" class="h-screen bg-[#0f0f0f] flex flex-col-reverse lg:flex-row-reverse items-center justify-evenly">
+            <section class="text-white flex flex-col items-center justify-center gap-4">
+                <h2 class="text-[20px] lg:text-[40px] italic" >Hello! I’m</h2>
+                <h1 class="text-[36px] lg:text-[72px] font-bold">MANOJ</h1>
+                <h2 class="text-[18px] lg:text-[36px] font-bold">Front-End Developer</h2>
+
+                <p class="text-[12px] lg:text-[16px] italic text-center px-4">"Creating pixel-perfect experiences while battling the occasional rogue semicolon!"</p>
+
+                <section id="Resume" class="text-black font-bold bg-[#FFA500] px-5 lg:px-10 py-2 lg:py-4 rounded-full border-2 border-black hover:shadow-lg">
+                    <a href="./Assets/Manoj RT.pdf" download
+                      >Download CV</a
+                    >
+                  </section>
+            </section>
+
+            <section>
+                <img src="./Assets/Profile-Images/Profile pic.png" alt="Profile-pic" class="w-[300px] scale-[1.5] lg:scale-[1.2] lg:w-[500px]">
+            </section>
+        </div>
+
+        <!-- Skills -->
+
+        <div id="Skills" class="relative bg-[url(./Assets/Profile-Images/Town.png)] bg-no-repeat lg:bg-cover sm:h-[300px] lg:h-screen z-[99] text-center flex items-center justify-center flex-col py-[24px]">
+            <section id="heading">
+              <!-- <img src="../Assets/Comic-png/MySkills.png" width="100%" alt="" class="w-[150px] lg:w-[200px]" /> -->
+              <h2 class="text-white pb-16 text-[32px]">My Skills</h2>
+            </section>
+    
+            <section id="skill-icons" class="flex flex-wrap w-[375px] lg:w-[800px] gap-[20px] lg:gap-[48px] justify-evenly lg:justify-around text-white text-[14px] lg:text-[20px] px-2" >
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/html.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>HTML5</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/css.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>CSS</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/javascript.png" alt="" class="w-[75px] lg:w-[100px]"  />
+                <h2>JavaScript</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/react.png" alt="" class="w-[75px] lg:w-[100px]"  />
+                <h2>React</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/bootstrap-framework-logo.png" alt="" class="w-[75px] lg:w-[100px]"/>
+                <h2>Bootstrap</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/tailwind.png" alt="" class="w-[75px] lg:w-[100px]"/>
+                <h2>Tailwind CSS</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/figma.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>Figma</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/adobe-photoshop.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>PhotoShop</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/java.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>Java</h2>
+              </section>
+              <section class="flex items-center justify-center flex-col">
+                <img src="./Assets/Icons/sql.png" alt="" class="w-[75px] lg:w-[100px]" />
+                <h2>SQL</h2>
+              </section>
+            </section>
+        </div>
+
+        <!-- Projects -->
+
+        <div id="Projects" class="min-h-screen w-full  flex  flex-col justify-between bg-white">
+            <section class="flex items-center justify-center">
+                <h2 class="text-black py-8 lg:py-16 text-[32px] text-center">Projects</h2>
+            </section>
+            </section>
+            <div id="Developed-projects" class="min-h-[80vh]">
+                <h1 class="text-[24px] lg:text-[32px] px-8 py-2 lg:px-16">
+                    Developed Projects
+                </h1>
+                <ul class="flex flex-col">
+      
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="w-[150px] lg:w-full text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">Zen Architects - Architecture Website</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://zen-architecture.vercel.app/"
+                                target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black text-[14px] ">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[500px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                            <a href="https://zen-architecture.vercel.app/"
+                            target="_blank">
+                            <img src="./Assets/Project-images/Zen-Architecture.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700 shadow-lg" alt="Zen Architects - Architecture Website">
+                        </a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://zen-architecture.vercel.app/"
+                            target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[12px]">Visit now</a>
+                        </section>
+                    </li>
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">Netflix Clone Website</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://github.com/Manojrt/Netflix-Clone"  target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[400px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                            <a href="https://github.com/Manojrt/Netflix-Clone"  target="_blank">
+                                <img src="./Assets/Project-images/Netflix-Clone.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700 shadow-lg" alt="Netflix Clone Website">
+                            </a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://github.com/Manojrt/Netflix-Clone"  target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">Mr & Mrs Fitness Center</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://mr-mrs-fitness-center.vercel.app/"
+                                target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[400px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                            <a href="https://mr-mrs-fitness-center.vercel.app/"
+                            target="_blank">
+                            <img src="./Assets/Project-images/Mr&Mrs-Fitness.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700 shadow-lg" alt="Netflix Clone Website"></a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://mr-mrs-fitness-center.vercel.app/"
+                            target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+      
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">My Music</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://my-music-eight-alpha.vercel.app/" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[300px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                            <a href="https://my-music-eight-alpha.vercel.app/" target="_blank"> <img src="./Assets/Project-images/MyMusic.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700 shadow-lg" alt="Netflix Clone Website"></a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://my-music-eight-alpha.vercel.app/" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            <div id="uxui-projects" class="min-h-[80vh]">
+                <h1 class="text-[20px] lg:text-[32px] pb-4 px-8 lg:px-16">
+                    UX/UI Projects
+                </h1>
+                <ul class="flex flex-col ">
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200 w-[150px] lg:w-full">Food Truck - Food Ordering Application</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://www.behance.net/gallery/197535151/Food-Truck-Food-Ordering-Application" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[500px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                            <a href="https://www.behance.net/gallery/197535151/Food-Truck-Food-Ordering-Application" target="_blank"> <img src="./Assets/Project-images/Food-Truck.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Netflix Clone Website"></a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://www.behance.net/gallery/197535151/Food-Truck-Food-Ordering-Application" target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+      
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200 w-[150px] lg:w-full">Zen Architects - Architecture Company Website Design</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://www.behance.net/gallery/195919865/Zen-Architects-Architecture-Website-Design"
+                                target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute lg:left-[700px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                           <a href="https://www.behance.net/gallery/195919865/Zen-Architects-Architecture-Website-Design"
+                           target="_blank">
+                           <img src="./Assets/Project-images/Zen-Architecture.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Zen Architects"></a> 
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://www.behance.net/gallery/195919865/Zen-Architects-Architecture-Website-Design"
+                            target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+      
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">Paws Care</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://www.behance.net/gallery/196515735/Pet-Care-website"
+                                target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[300px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                           <a href="https://www.behance.net/gallery/196515735/Pet-Care-website"
+                           target="_blank">
+                           <img src="./Assets/Project-images/Paws-Care.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Netflix Clone Website">
+                        </a>
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://www.behance.net/gallery/196515735/Pet-Care-website"
+                            target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+                    <li class="relative  h-[200px] lg:h-[120px] 
+                    border-t-2 border-b-0 lg:mx-16  border-black hover:bg-black flex items-center justify-between group duration-100 hover:text-white cursor-pointer 
+                    ">
+                        <section class=" lg:px-16 flex flex-col gap-4">
+                            <h2 class="text-[14px] lg:text-[20px] lg:group-hover:ml-16 px-4 duration-200">Google Pay for Apple Watch</h2>
+
+                            <section class="px-4 lg:px-16 lg:hidden block">
+                                <a href="https://www.behance.net/gallery/157192515/Google-Pay-(Apple-Watch)"  target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                            </section>
+                        </section>
+                        <section class="lg:absolute left-[500px] bg-gray-400 rounded-2xl shadow-xl z-20 mr-6 lg:mr-0">
+                           <a href="https://www.behance.net/gallery/157192515/Google-Pay-(Apple-Watch)"  target="_blank">
+                            <img src="./Assets/Project-images/Google-pay.png" class="w-[150px] lg:w-[250px]  rounded-xl lg:hidden lg:group-hover:block duration-700" alt="Netflix Clone Website">
+                           </a> 
+                        </section>
+                        <section class="px-4 lg:px-16 hidden lg:block">
+                            <a href="https://www.behance.net/gallery/157192515/Google-Pay-(Apple-Watch)"  target="_blank" class="lg:px-4 px-2 py-1 lg:py-2 bg-[#FFA500] rounded-md text-black lg:text-[16px] text-[14px]">Visit now</a>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- About -->
+
+        <div id="About" class=" lg:h-[100vh] flex flex-col justify-center items-center px-[24px] ">
+            <section id="heading" class="w-[150px] lg:w-[200px]" >
+                <h2 class="text-white sm:text-[24px] text-nowrap text-[42px] text-center">About Me</h2>
+            </section>
+            <section id="About-section" class="flex flex-row items-center lg:gap-[100px] text-white ">
+              <section id="about-content" class="lg:w-[800px] w-[300px] text-justify flex flex-col items-center">
+                <p class="text-[14px] lg:text-[20px]">
+                  Hello! My name is
+                  <span class="text-[#FFA500] text-[32px] lg:text-[48px]" >Manoj!</span> , and I am
+                  a dedicated front-end developer who excels in creating engaging
+                  digital experiences. My extensive skill set includes HTML, CSS,
+                  and JavaScript, and I take pride in converting design concepts
+                  into visually stunning and intuitive web solutions. I have an eye
+                  for aesthetics and focus on user-centric design principles to
+                  ensure my products are both appealing and easy to use. I am
+                  proficient in using modern CSS frameworks such as Tailwind CSS and
+                  Bootstrap, which expedite development processes and ensure
+                  consistency across projects. <br /><br />
+                  Though I specialize in front-end technologies, I have a basic
+                  understanding of React.js and Redux toolkit and I am willing to
+                  learn more about these frameworks. I began my career as a UX-UI
+                  designer and have experience working on various projects.
+                  <br /><br />
+                  In addition to front-end development, I am well-versed in Java and
+                  SQL, which enables me to seamlessly integrate with backend systems
+                  and manage databases.
+                </p>
+                <br />
+              </section>
+            </section>
+        </div>
+    </main>
+    <footer id="Contact" class=" lg:h-[300px] bg-[#373737] text-white w-full flex flex-wrap flex-col lg:flex-row  justify-around  lg:items-center lg:gap-24px gap-[24px] py-[50px]">
+        <section class="flex items-center justify-center">
+          <a href="./index.html"
+            ><img src="./Assets/Profile-Images/Logo.png" width="100px" alt=""
+          /></a>
+        </section>
+        <section class="footer-items">
+          <ul class="flex lg:flex-col items-center justify-center gap-[24px] flex-row">
+            <li><a href="#Home" class="hover:text-[#FFA500]">Home</a></li>
+            <li><a href="#Skills" class="hover:text-[#FFA500]">Skills</a></li>
+            <li><a href="#Projects" class="hover:text-[#FFA500]">Projects</a></li>
+            <li><a href="#About" class="hover:text-[#FFA500]">About</a></li>
+            <li><a href="#Contact" class="hover:text-[#FFA500]">Contact</a></li>
+          </ul>
+        </section>
+        <section class="footer-items">
+          <ul class="flex flex-col items-start justify-center gap-[24px] px-[24px]">
+            <span style="font-size: x-large; font-weight: bold;color: #FFA500;"
+              >UX-UI Design Projects</span
+            >
+            <li>
+              <a
+                href="https://www.behance.net/gallery/157192515/Google-Pay-(Apple-Watch)"
+                target="_blank"
+                title="Google Pay (Apple Watch)"
+                class="hover:text-[#FFA500]">Google Pay (Apple Watch)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/gallery/197535151/Food-Truck-Food-Ordering-Application"
+                target="_blank"
+                title="Food Truck - Food Ordering Application"
+                class="hover:text-[#FFA500]">Food Truck - Food Ordering Application</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/gallery/196515735/Pet-Care-website"
+                target="_blank"
+                title="Pet Care website"
+                class="hover:text-[#FFA500]">Pet Care website</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/gallery/195919865/Zen-Architects-Architecture-Website-Design"
+                target="_blank"
+                title="Zen Architects - Architecture Website Design"
+                class="hover:text-[#FFA500]">Zen Architects - Architecture Website Design</a
+              >
+            </li>
+          </ul>
+        </section>
+  
+        <section class="footer-items">
+          <ul class="flex flex-col items-start justify-center gap-[24px] w-full px-[24px]">
+            <span style="font-size: x-large; font-weight: bold; color: #FFA500;"
+              >Developed Projects</span
+            >
+  
+            <li>
+              <a
+                href="https://github.com/Manojrt/Netflix-Clone"
+                title="Netflix-Clone"
+                target="_blank"
+                class="hover:text-[#FFA500]">Netflix-Clone</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://my-music-eight-alpha.vercel.app/"
+                title="My Music"
+                target="_blank"
+                class="hover:text-[#FFA500]">My Music</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mr-mrs-fitness-center.vercel.app/"
+                title="Mr & Mrs Fitness Center"
+                target="_blank"
+                class="hover:text-[#FFA500]">Mr & Mrs Fitness Center</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://zen-architecture.vercel.app/"
+                title="Zen Architects - Construction Company"
+                target="_blank"
+                class="hover:text-[#FFA500]">Zen Architects</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="social-media" class="flex flex-col gap-[24px] px-[24px]">
+          <span style="font-size: x-large; font-weight: bold;color: #FFA500;"
+              >Contact Details</span
+            >
+          <a href="mailto:manojrt172000@gmail.com" target="_blank" class="hover:text-[#FFA500]">G-Mail</a>
+          <a href="https://www.behance.net/creativehub28" target="_blank" class="hover:text-[#FFA500]"
+            >Behance - Creativehub.png</a
+          >
+          <a href="https://github.com/Manojrt" target="_blank" class="hover:text-[#FFA500]">Git Hub</a>
+          <a
+            href="https://www.linkedin.com/in/manoj-r-t-68381518a/"
+            target="_blank"
+            class="hover:text-[#FFA500]">LinkedIn</a
+          >
+        </section>
+      </footer>
+      <div id="copyrights" class="bg-[#232323] text-white h-[50px] flex items-center justify-center text-center text-sm lg:text-lg">
+        <p>Copyright © 2024, Manoj RT. All rights reserved.</p>
+      </div>
+    <script src="./nav.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
